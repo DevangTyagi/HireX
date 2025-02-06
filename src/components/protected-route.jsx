@@ -1,4 +1,4 @@
-import { useUser } from "@clerk/clerk-react";
+import { useSignIn, useUser } from "@clerk/clerk-react";
 import { Navigate, useLocation } from "react-router-dom";
 
 const ProtectedRoute = ({ children }) => {

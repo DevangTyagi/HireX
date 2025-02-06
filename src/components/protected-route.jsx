@@ -9,7 +9,7 @@ const ProtectedRoute = ({children}) => {
         return null; 
       }
     if(isLoaded && !isSignedIn && isSignedIn!==undefined){
-      return <Navigate to="https://hirex-nine.vercel.app/?sign-in=true" />
+        return <Navigate to="/?sign-in==true" />
     }
 
     if (

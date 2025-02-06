@@ -33,7 +33,7 @@ function Header() {
     <>
       <nav className="py-4 flex justify-between item-center">
         <Link>
-          <img src="src\assets\Gold_logo_2.png" alt="logo" className="h-16" />
+          <img src="/Gold_logo_2.png" alt="logo" className="h-16" />
         </Link>
         <div className="flex gap-8">
           <SignedOut>

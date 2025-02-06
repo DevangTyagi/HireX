@@ -25,7 +25,7 @@ function LandingPage() {
           <span className="flex item-center gap-2 sm:gap-6">
             & let{" "}
             <img
-              src="src\assets\Gold_logo_2.png"
+              src="/Gold_logo_2.png"
               alt="logo"
               className="h-11 sm:h-16 lg:h-28"
             />
@@ -62,7 +62,7 @@ function LandingPage() {
         </CarouselContent>
       </Carousel>
 
-      <img src="src/assets/Hirex Banner.png" alt="banner" className="w-full" />
+      <img src="/Hirex Banner.png" alt="banner" className="w-full" />
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Card>

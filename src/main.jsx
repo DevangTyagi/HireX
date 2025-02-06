@@ -11,6 +11,11 @@ if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key");
 }
 
+console.log("Auth Config:", {
+  publishableKey: PUBLISHABLE_KEY ? "SET" : "MISSING",
+  afterSignInUrl,
+});
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ClerkProvider
@@ -18,7 +23,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         baseTheme: shadesOfPurple,
       }}
       publishableKey={PUBLISHABLE_KEY}
-      signIn={{ afterSignInUrl: afterSignInUrl }}
+      signIn={{
+        afterSignInUrl: afterSignInUrl,
+        routing: "path",
+        path: "/sign-in",
+      }}
       afterSignOutUrl="/"
     >
       <App />

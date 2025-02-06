@@ -6,10 +6,10 @@ const ProtectedRoute = ({children}) => {
     const {pathname} = useLocation();
 
     if (!isLoaded) {
-        return null; // or a loading spinner
+        return null; 
       }
     if(isLoaded && !isSignedIn && isSignedIn!==undefined){
-        return <Navigate to="/?sign-in==true" />
+      return <Navigate to="https://hirex-nine.vercel.app/?sign-in=true" />
     }
 
     if (

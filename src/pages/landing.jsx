@@ -37,7 +37,7 @@ function LandingPage() {
         </p>
       </section>
 
-      <div className="flex item-center justify-center gap-10">
+      <div className="flex item-center justify-center gap-4 sm:gap-10">
         <Link to={"/jobs"}>
           <Button variant="blue" size="xl">
             Find Jobs

@@ -35,20 +35,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </React.StrictMode>
 );
 
-// import { ClerkProvider } from "@clerk/clerk-react";
-
-// function App({ children }) {
-//   const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
-//   const afterSignInUrl = import.meta.env.VITE_AFTER_SIGN_IN_URL;
-
-//   return (
-//     <ClerkProvider
-//       publishableKey={clerkPubKey}
-//       signIn={{ afterSignInUrl: afterSignInUrl }}
-//     >
-//       {children}
-//     </ClerkProvider>
-//   );
-// }
-
 export default App;
